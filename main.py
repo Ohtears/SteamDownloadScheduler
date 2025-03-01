@@ -1,22 +1,18 @@
 import subprocess
 
-import time
-
 from datetime import datetime
-
 
 x = datetime.now()
 
 print(x.strftime("%H")) 
 
-while int(x.strftime("%H")) != 4: # timi ke garare downlaod start bshe
+while int(x.strftime("%H")) != 4: 
     x = datetime.now()
-    # print('task badi')
-print(f'Saat 4 shod')
+
+print(f'It is now 4o Clock')
 
 command = 'start steam.exe'
 
-
 run = subprocess.call(command, shell=True)
 
-print('download starting...')
+print('Download starting...')
